@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --first-color: #e7eaf6;
+    --second-color: #a2a8d3;
+    --third-color: #38598b;
+    --fourth-color: #113f67;
+    --input-bgcolor: #f2f2f2;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--first-color);
+}
+
+.login-page {
+    width: 350px;
+    padding: 10% 0 0;
+    margin: auto;
+}
+.form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 350px;
+    margin: 0 auto 100px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1), 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.form h2{
+    font-size: 16px;
+    padding-bottom: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.inputBox{
+    position: relative;
+}
+.inputBox input{
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    background: transparent;
+    border-radius: 4px;
+}
+.inputBox label{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    margin-left: 10px;
+    padding: 10px 0;
+    color: grey;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.inputBox input:focus~label,
+.inputBox input:valid~label
+{
+    top: -18px;
+    left: 10px;
+    font-size: 12px;
+    height: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: white;
+}
+
+.inputBox input:focus{
+    outline: none;
+    border: 2px solid #1a73e8;
+}
+.form button {
+    text-transform: uppercase;
+    outline: 0;
+    background: var(--fourth-color);
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+    background: var(--third-color);
+}
+.form .message {
+    margin: 15px 0 0;
+    color: var(--second-color);
+    font-size: 0.8rem;
+}
+.form .message a {
+    color: var(--third-color);
+    text-decoration: none;
+}
+.form .register-form {
+    display: none;
+}

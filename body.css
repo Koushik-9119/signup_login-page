@@ -1,0 +1,18 @@
+
+:root{
+   --black:#2c3e50;
+   --border:.1rem solid rgba(0,0,0,.2);
+}
+.heading{
+   padding-bottom: 3px;
+   border-bottom: var(--border);
+   font-size: 25px;
+   color: var(--black);
+   text-transform: capitalize;
+   margin-bottom: 3px;
+}
+.welcome{
+   font-size: 20px;
+   color: var(--black);
+   text-transform: capitalize;
+}
