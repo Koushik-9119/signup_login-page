@@ -8,7 +8,7 @@ if(isset($_POST['signup'])){
 	$password=get_safe_value($con,$_POST['password']);
 
     if(mysqli_num_rows(mysqli_query($con,"select * from users_login where username='$username'"))>0){
-		$msg= "Userame already present";
+		$msg= "<font color='red'> Userame already Take! If WE Are Already Registered Please";
 	}else{
 		$password=password_hash($password,PASSWORD_DEFAULT);
 		mysqli_query($con,"insert into users_login(name,username,password) values('$name','$username','$password')");
